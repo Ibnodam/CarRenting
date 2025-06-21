@@ -1,0 +1,32 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:KursProject.ViewModel"
+                    xmlns:view="clr-namespace:KursProject.View">
+    <DataTemplate DataType="{x:Type vm:HomeViewModel}">
+        <view:Home/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:ClientViewModel}">
+        <view:ClientView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:PriceViewModel}">
+        <view:PriceView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:CarViewModel}">
+        <view:CarView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:ServiceViewModel}">
+        <view:ServiceView/>
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type vm:RentingViewModel}">
+        <view:RentingView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:PayingViewModel}">
+        <view:PayView/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:TopCarViewModel}">
+        <view:TopCarView/>
+    </DataTemplate>
+
+</ResourceDictionary>

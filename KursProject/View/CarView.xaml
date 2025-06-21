@@ -1,0 +1,140 @@
+﻿<UserControl x:Class="KursProject.View.CarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KursProject.View"
+              xmlns:vm="clr-namespace:KursProject.ViewModel"
+             mc:Ignorable="d" 
+               Style="{StaticResource Page_Style}"
+             d:DesignHeight="500" d:DesignWidth="900">
+    <UserControl.Resources>
+        <Style x:Key="ModernDataGridStyle" TargetType="{x:Type DataGrid}">
+            <Setter Property="Background" Value="#FFF0F0F0"/>
+            <Setter Property="Foreground" Value="#FF333333"/>
+            <Setter Property="BorderBrush" Value="#FFABADB3"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="RowDetailsVisibilityMode" Value="Collapsed"/>
+            <Setter Property="ScrollViewer.CanContentScroll" Value="True"/>
+            <Setter Property="SelectionMode" Value="Extended"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="GridLinesVisibility" Value="None"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="RowHeight" Value="28"/>
+
+            <!-- Стиль заголовков столбцов -->
+            <Setter Property="ColumnHeaderStyle">
+                <Setter.Value>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="#FF0078D7"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="Padding" Value="5,3"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+
+            <!-- Стиль строк -->
+            <Setter Property="RowStyle">
+                <Setter.Value>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Setter Property="Background" Value="White"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFE6F7FF"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="#FFD1EBFF"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <UserControl.DataContext>
+        <vm:CarViewModel/>
+    </UserControl.DataContext>
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Row="0" Grid.Column="0" Margin="10"  Padding="3" Text="{Binding Path=CurrentCar.Marka, Mode=TwoWay}" Style="{StaticResource  PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите Марку авто"  />
+            <TextBox Grid.Row="1" Grid.Column="0" Margin="10"  Padding="3" Text="{Binding Path=CurrentCar.Model, Mode=TwoWay}"  Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите Модель авто" />
+            <TextBox Grid.Row="2" Grid.Column="0" Margin="10"  Padding="3" Text="{Binding Path=CurrentCar.Year_Realize, Mode=TwoWay}" Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите Году выпуска" />
+
+
+            <TextBox Grid.Row="3" Grid.Column="0" Margin="10"  Padding="3" Text="{Binding Path=CurrentCar.Reliability, Mode=TwoWay}" Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Выберите статус доступности"/>
+
+            <ComboBox Grid.Row="0" Grid.Column="1"
+                      Margin="12 10"
+                      ItemsSource="{Binding PrList}"
+                      SelectedItem="{Binding Id_Price}"
+                      SelectedValue="{Binding CurrentCar.Id_Price}"
+                      DisplayMemberPath="Price"
+                      SelectedValuePath="Id_Price"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="10"  Padding="3" Text="{Binding Path=CurrentCar.Type_Body, Mode=TwoWay}"  Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите тип кузова" />
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="10"  Padding="3" Text="{Binding Path=CurrentCar.Number_Car, Mode=TwoWay}" Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите Гос номер" />
+            <TextBlock Name="txtBlockMessage"
+            Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" 
+            Foreground="Red" 
+           Text="{Binding Path=Message}" Style="{StaticResource Text_Style}" 
+            />
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" FontSize="20" Margin="2 5 "
+  Command="{Binding SaveCommand}" Content="Add"/>
+
+                <Button Grid.Column="1" FontSize="20" Margin="2 5 "
+  Command="{Binding Path=DeleteCommand}">
+                    Delete
+                </Button>
+                <Button Grid.Column="2" FontSize="20" Margin="2 5 "
+         Command="{Binding Path=UpdateCommand}">
+                    Update
+                </Button>
+            </Grid>
+        </Grid>
+        <DataGrid Name="dgClients"
+AutoGenerateColumns="False"
+Grid.Row="6"
+ Grid.Column="1" Margin="5,8" Padding="3"
+                  Style="{StaticResource ModernDataGridStyle}"
+ItemsSource="{Binding Path=CarList, Mode=TwoWay}" SelectedItem="{Binding CurrentCar}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Car Id" Width="auto" Binding="{Binding Path=Id_Car}"/>
+                <DataGridTextColumn Header="Price Id" Width="auto" Binding="{Binding Path=Id_Price}"/>
+                <DataGridTextColumn Header="Марка" Width="auto" Binding="{Binding Path=Marka}"/>
+                <DataGridTextColumn Header="Модель" Width="auto" Binding="{Binding Path=Model}"/>
+                <DataGridTextColumn Header="Год выпуска" Width="auto" Binding="{Binding Path=Year_Realize}"/>
+                <DataGridTextColumn Header="Статус доступности" Width="auto" Binding="{Binding Path=Reliability}"/>
+                <DataGridTextColumn Header="тип кузова " Width="auto" Binding="{Binding Path=Type_Body}"/>
+                <DataGridTextColumn Header="Гос номер" Width="auto" Binding="{Binding Path=Number_Car}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</UserControl>

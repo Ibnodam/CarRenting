@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\CarPic.png" />
+    <None Remove="Assets\DiscountPic.png" />
+    <None Remove="Assets\HomePic.png" />
+    <None Remove="Assets\home_page.png" />
+    <None Remove="Assets\img_customer.png" />
+    <None Remove="Assets\img_home.png" />
+    <None Remove="Assets\payingPic.png" />
+    <None Remove="Assets\PriceListPic.png" />
+    <None Remove="Assets\RentingPic.png" />
+    <None Remove="Assets\ServicePic.png" />
+    <None Remove="Assets\shutdown_def.png" />
+    <None Remove="Assets\shutdown_mo.png" />
+    <None Remove="Assets\titul.png" />
+    <None Remove="Assets\User.png" />
+    <None Remove="Assets\UserPic.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\HomePic.png" />
+    <Resource Include="Assets\ServicePic.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\CarPic.png" />
+    <Resource Include="Assets\DiscountPic.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\img_home.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\home_page.png" />
+    <Resource Include="Assets\img_customer.png" />
+    <Resource Include="Assets\payingPic.png" />
+    <Resource Include="Assets\PriceListPic.png" />
+    <Resource Include="Assets\RentingPic.png" />
+    <Resource Include="Assets\shutdown_def.png" />
+    <Resource Include="Assets\shutdown_mo.png" />
+    <Resource Include="Assets\titul.png" />
+    <Resource Include="Assets\User.png" />
+    <Resource Include="Assets\UserPic.png" />
+  </ItemGroup>
+
+</Project>

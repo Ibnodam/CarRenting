@@ -1,0 +1,139 @@
+﻿<UserControl x:Class="KursProject.View.PayView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KursProject.View"
+             xmlns:vm="clr-namespace:KursProject.ViewModel"
+             mc:Ignorable="d" 
+               Style="{StaticResource Page_Style}"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="ModernDataGridStyle" TargetType="{x:Type DataGrid}">
+            <Setter Property="Background" Value="#FFF0F0F0"/>
+            <Setter Property="Foreground" Value="#FF333333"/>
+            <Setter Property="BorderBrush" Value="#FFABADB3"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="RowDetailsVisibilityMode" Value="Collapsed"/>
+            <Setter Property="ScrollViewer.CanContentScroll" Value="True"/>
+            <Setter Property="SelectionMode" Value="Extended"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="GridLinesVisibility" Value="None"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="RowHeight" Value="28"/>
+
+            <!-- Стиль заголовков столбцов -->
+            <Setter Property="ColumnHeaderStyle">
+                <Setter.Value>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="#FF0078D7"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="Padding" Value="5,3"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+
+            <!-- Стиль строк -->
+            <Setter Property="RowStyle">
+                <Setter.Value>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Setter Property="Background" Value="White"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFE6F7FF"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="#FFD1EBFF"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <UserControl.DataContext>
+        <vm:PayingViewModel/>
+    </UserControl.DataContext>
+    <Grid Margin="15">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="txtBlockMessage"
+ Grid.Row="1" 
+ Foreground="Red"  FontSize="15"
+Text="{Binding Path=Message}" Style="{StaticResource Text_Style}" 
+ />
+        <Grid Grid.Row="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ComboBox Grid.Row="0" Grid.Column="0"
+            Margin="12 10"
+            ItemsSource="{Binding RentList}"
+            SelectedItem="{Binding Id_Renting}"
+            SelectedValue="{Binding CurrentPay.Id_Renting}"
+            DisplayMemberPath="Id_Renting"
+            SelectedValuePath="Id_Renting"/>
+            <DatePicker Grid.Row="0" Grid.Column="1" Margin="5" Text="{Binding Path=CurrentPay.Date_Payment, Mode=TwoWay}" />
+
+            <TextBox Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0" Margin="5" Text="{Binding Path=CurrentPay.Payment, Mode=TwoWay}"  Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите Сумму" />
+              
+            <TextBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="5"  Padding="3" Text="{Binding Path=CurrentPay.Type_Pay, Mode=TwoWay}" Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Способ оплаты" />
+            <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" Margin="5">
+                <Grid.ColumnDefinitions>
+                   
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" FontSize="20" Margin=" 0 2 2 2"
+                 Command="{Binding SaveCommand}" Content="Add"/>
+
+                <Button Grid.Column="1" FontSize="20" Margin="2 "
+                 Command="{Binding Path=DeleteCommand}">
+                    Delete
+                </Button>
+               
+
+            </Grid>
+
+        </Grid>
+
+        <DataGrid Name="dgClients"
+       AutoGenerateColumns="False"
+       Grid.Row="6"
+        Grid.Column="1" Margin="5,8" Padding="3"
+                  Style="{StaticResource ModernDataGridStyle}"
+       ItemsSource="{Binding Path=PayList, Mode=TwoWay}" SelectedItem="{Binding CurrentPay}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Paying Id" Width="auto" Binding="{Binding Path=Id_Paying}"/>
+                <DataGridTextColumn Header="Renting Id" Width="auto" Binding="{Binding Path=Id_Renting}"/>
+                <DataGridTextColumn Header="Оплата" Width="auto" Binding="{Binding Path=Payment}"/>
+                <DataGridTextColumn Header="Дата оплаты" Width="auto" Binding="{Binding Path=Date_Payment}"/>
+                <DataGridTextColumn Header="Способ оплаты" Width="auto" Binding="{Binding Path=Type_Pay}"/>
+                <DataGridTextColumn Header="Validity_Period" Width="auto" Binding="{Binding Path=Validity_Period}"/>
+               
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+
+    </Grid>
+</UserControl>

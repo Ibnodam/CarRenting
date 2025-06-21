@@ -1,0 +1,143 @@
+﻿<UserControl x:Class="KursProject.View.ClientView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KursProject.View"
+             xmlns:vm="clr-namespace:KursProject.ViewModel"
+             
+             mc:Ignorable="d" 
+               Style="{StaticResource Page_Style}"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="ModernDataGridStyle" TargetType="{x:Type DataGrid}">
+            <Setter Property="Background" Value="#FFF0F0F0"/>
+            <Setter Property="Foreground" Value="#FF333333"/>
+            <Setter Property="BorderBrush" Value="#FFABADB3"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="RowDetailsVisibilityMode" Value="Collapsed"/>
+            <Setter Property="ScrollViewer.CanContentScroll" Value="True"/>
+            <Setter Property="SelectionMode" Value="Extended"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="GridLinesVisibility" Value="None"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="RowHeight" Value="28"/>
+
+            <!-- Стиль заголовков столбцов -->
+            <Setter Property="ColumnHeaderStyle">
+                <Setter.Value>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="#FF0078D7"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="Padding" Value="5,3"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+
+            <!-- Стиль строк -->
+            <Setter Property="RowStyle">
+                <Setter.Value>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Setter Property="Background" Value="White"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFE6F7FF"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="#FFD1EBFF"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <UserControl.DataContext>
+        <vm:ClientViewModel/>
+    </UserControl.DataContext>
+    <Grid Margin="15">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="txtBlockMessage"
+ Grid.Row="1" 
+ Foreground="Red"  FontSize="15"
+Text="{Binding Path=Message}" Style="{StaticResource Text_Style}" 
+ />
+        <Grid Grid.Row="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Row="0" Grid.Column="0" Margin="5"  Text="{Binding Path=CurrentClient.FIO, Mode=TwoWay}" Style="{StaticResource  PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите ФИО"  />
+            <TextBox Grid.Row="1" Grid.Column="0" Margin="5" Text="{Binding Path=CurrentClient.Email, Mode=TwoWay}"  Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите Email" />
+            <TextBox Grid.Row="2" Grid.Column="0" Margin="5"  Text="{Binding Path=CurrentClient.Experience, Mode=TwoWay}" Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите стаж вождения" />
+            <TextBox Grid.Row="3" Grid.Column="0" Margin="5" Text="{Binding Path=CurrentClient.Validity_Period, Mode=TwoWay}" Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите Срок действия ВУ"/>
+
+            <DatePicker Grid.Row="0" Grid.Column="1" Margin="5" SelectedDate="{Binding Path=CurrentClient.BirthDate, Mode=TwoWay}" />
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5"  Padding="3" Text="{Binding Path=CurrentClient.Number_License, Mode=TwoWay}" Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите номер ВУ " />
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5"  Padding="3" Text="{Binding Path=CurrentClient.Count_Car, Mode=TwoWay}" Style="{StaticResource PlaceholderTextBoxStyle}" FontSize="18" Tag="Введите Количество арендованных авто" />
+            <Grid Grid.Column="1" Grid.Row="3" Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" FontSize="20" Margin=" 0 2 2 2"
+                 Command="{Binding SaveCommand}" Content="Add"/>
+
+                <Button Grid.Column="1" FontSize="20" Margin="2 "
+                 Command="{Binding Path=DeleteCommand}">
+                   Delete
+                </Button>
+                <Button Grid.Column="2" FontSize="20" Margin="2 2 0 2"
+                        Command="{Binding Path=UpdateCommand}">
+                    Update
+                </Button>
+
+            </Grid>
+           
+        </Grid>
+
+        <DataGrid Name="dgClients"
+                  Style="{StaticResource ModernDataGridStyle}"
+                  AutoGenerateColumns="False"
+                  Grid.Row="6"
+                  Grid.Column="1" 
+                  Margin="5,8" 
+                  Padding="3"
+                  ItemsSource="{Binding Path=ClList, Mode=TwoWay}" 
+                  SelectedItem="{Binding CurrentClient}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Client Id" Width="auto" Binding="{Binding Path=Id_Client}"/>
+                <DataGridTextColumn Header="FIO" Width="auto" Binding="{Binding Path=FIO}"/>
+                <DataGridTextColumn Header="Email" Width="auto" Binding="{Binding Path=Email}"/>
+                <DataGridTextColumn Header="Experience" Width="auto" Binding="{Binding Path=Experience}"/>
+                <DataGridTextColumn Header="Validity_Period" Width="auto" Binding="{Binding Path=Validity_Period}"/>
+                <DataGridTextColumn Header="Count_Car" Width="auto" Binding="{Binding Path=Count_Car}"/>
+                <DataGridTextColumn Header="Number_License" Width="auto" Binding="{Binding Path=Number_License}"/>
+                <DataGridTextColumn Header="Status" Width="auto" Binding="{Binding Path=Status}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\services\\topcarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\services\\topcarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\viewmodel\\topcarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\viewmodel\\topcarviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\view\\rentingview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\view\\rentingview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\viewmodel\\rentingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\viewmodel\\rentingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\services\\rentingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\services\\rentingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\view\\serviceview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\view\\serviceview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\converters\\fromserviceidtoname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\converters\\fromserviceidtoname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\view\\discountview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\view\\discountview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\services\\servic_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\services\\servic_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\view\\topcarview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\view\\topcarview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\view\\priceview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\view\\priceview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\view\\payview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\view\\payview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\model\\topcars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\model\\topcars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\viewmodel\\navigationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\viewmodel\\navigationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\utills\\datatemlate.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\utills\\datatemlate.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|c:\\users\\hp\\desktop\\kursach3kurs\\kursproject\\kursproject\\model\\renting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C44CA9-1EE2-4977-A975-64342B687F1B}|KursProject\\KursProject.csproj|solutionrelative:kursproject\\model\\renting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PayView.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\PayView.xaml",
+              "RelativeDocumentMoniker": "KursProject\\View\\PayView.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\PayView.xaml",
+              "RelativeToolTip": "KursProject\\View\\PayView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T07:10:25.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DiscountView.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\DiscountView.xaml",
+              "RelativeDocumentMoniker": "KursProject\\View\\DiscountView.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\DiscountView.xaml",
+              "RelativeToolTip": "KursProject\\View\\DiscountView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T07:08:50.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RentingView.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\RentingView.xaml",
+              "RelativeDocumentMoniker": "KursProject\\View\\RentingView.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\RentingView.xaml",
+              "RelativeToolTip": "KursProject\\View\\RentingView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T01:01:28.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FromServiceIdTOName.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Converters\\FromServiceIdTOName.cs",
+              "RelativeDocumentMoniker": "KursProject\\Converters\\FromServiceIdTOName.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Converters\\FromServiceIdTOName.cs",
+              "RelativeToolTip": "KursProject\\Converters\\FromServiceIdTOName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T07:20:03.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PriceView.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\PriceView.xaml",
+              "RelativeDocumentMoniker": "KursProject\\View\\PriceView.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\PriceView.xaml",
+              "RelativeToolTip": "KursProject\\View\\PriceView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T07:11:56.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TopCarViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\ViewModel\\TopCarViewModel.cs",
+              "RelativeDocumentMoniker": "KursProject\\ViewModel\\TopCarViewModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\ViewModel\\TopCarViewModel.cs",
+              "RelativeToolTip": "KursProject\\ViewModel\\TopCarViewModel.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAArwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T07:11:09.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TopCarService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Services\\TopCarService.cs",
+              "RelativeDocumentMoniker": "KursProject\\Services\\TopCarService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Services\\TopCarService.cs",
+              "RelativeToolTip": "KursProject\\Services\\TopCarService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAD4vysAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T07:11:09.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "KursProject\\View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\MainWindow.xaml",
+              "RelativeToolTip": "KursProject\\View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T11:29:17.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServiceView.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\ServiceView.xaml",
+              "RelativeDocumentMoniker": "KursProject\\View\\ServiceView.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\ServiceView.xaml",
+              "RelativeToolTip": "KursProject\\View\\ServiceView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T07:13:08.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RentingService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Services\\RentingService.cs",
+              "RelativeDocumentMoniker": "KursProject\\Services\\RentingService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Services\\RentingService.cs",
+              "RelativeToolTip": "KursProject\\Services\\RentingService.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAiwJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T09:21:03.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RentingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\ViewModel\\RentingViewModel.cs",
+              "RelativeDocumentMoniker": "KursProject\\ViewModel\\RentingViewModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\ViewModel\\RentingViewModel.cs",
+              "RelativeToolTip": "KursProject\\ViewModel\\RentingViewModel.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAADwv6gAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T09:21:30.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Servic_Service.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Services\\Servic_Service.cs",
+              "RelativeDocumentMoniker": "KursProject\\Services\\Servic_Service.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Services\\Servic_Service.cs",
+              "RelativeToolTip": "KursProject\\Services\\Servic_Service.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwD0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T07:21:32.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TopCarView.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\TopCarView.xaml",
+              "RelativeDocumentMoniker": "KursProject\\View\\TopCarView.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\TopCarView.xaml",
+              "RelativeToolTip": "KursProject\\View\\TopCarView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T07:13:44.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Home.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\Home.xaml",
+              "RelativeDocumentMoniker": "KursProject\\View\\Home.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\View\\Home.xaml",
+              "RelativeToolTip": "KursProject\\View\\Home.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T01:28:08.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TopCars.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Model\\TopCars.cs",
+              "RelativeDocumentMoniker": "KursProject\\Model\\TopCars.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Model\\TopCars.cs",
+              "RelativeToolTip": "KursProject\\Model\\TopCars.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T01:10:17.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DataTemlate.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Utills\\DataTemlate.xaml",
+              "RelativeDocumentMoniker": "KursProject\\Utills\\DataTemlate.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Utills\\DataTemlate.xaml",
+              "RelativeToolTip": "KursProject\\Utills\\DataTemlate.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T01:03:29.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NavigationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\ViewModel\\NavigationViewModel.cs",
+              "RelativeDocumentMoniker": "KursProject\\ViewModel\\NavigationViewModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\ViewModel\\NavigationViewModel.cs",
+              "RelativeToolTip": "KursProject\\ViewModel\\NavigationViewModel.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwDEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T01:04:01.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Renting.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Model\\Renting.cs",
+              "RelativeDocumentMoniker": "KursProject\\Model\\Renting.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Kursach3Kurs\\KursProject\\KursProject\\Model\\Renting.cs",
+              "RelativeToolTip": "KursProject\\Model\\Renting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T17:45:13.088Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
